@@ -1,0 +1,18 @@
+<body>
+	<form action="template.php" method="get">
+		文件路径<input type="text" name="domain" id="domain"/><br>
+		XML卡片标题<input type="text" name="xmltitle" /><br>
+		XML卡片描述<input type="text" name="description" /><br>
+		记录ID<input type="text" name="id" /><br>
+		<input type="submit">
+	</form>
+
+	<script>
+		var str = location.href;
+		var arr = str.split("/");
+		delete arr[arr.length-1];
+		var dir = arr.join("/");
+		document.getElementById('domain').value = dir;
+	</script>
+	
+</body>
