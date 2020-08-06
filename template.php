@@ -4,3 +4,4 @@
 	<meta itemprop="image" content="iptest.php文件链接?id=<?php echo $_GET["id"]; ?>" />   //此处注意链接带上参数id
 	<title>QQ Xml 模板</title>
 </head>
+<body>生成成功.</body>
